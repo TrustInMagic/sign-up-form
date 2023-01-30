@@ -1,0 +1,108 @@
+@font-face {
+  font-family: caxo;
+  src: url(./fonts/Caxo-4BJnx.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  font-family:'Courier New', Courier, monospace
+}
+
+.left-side {
+  flex: 1.2;
+  height: 100%;
+  background-image: url("./images/mars.jpg");
+  background-size: cover;
+  position: relative
+}
+
+.form-side {
+  flex: 2;
+  background-color: black;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.transparent {
+  position: relative;
+  color: white;
+  background-color: rgb(0, 0, 0, 0.7);
+  top: 185px;
+  font-size: 2rem;
+  font-family: caxo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 130px;
+}
+
+.rocket {
+  height: 100px;
+}
+
+.description {
+  margin-top: 160px;
+  line-height: 28px;
+}
+
+.sign-up {
+  margin-top: 10px;
+}
+
+.action-call {
+  margin-top: 30px;
+}
+
+.description,
+.sign-up,
+.action-call {
+  margin-left: 20px;
+  margin-right: 20px
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  background-color: rgba(11, 11, 11, 0.575);
+  margin-top: 90px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 15px rgba(253, 244, 245, 0.402);
+  padding: 20px;
+}
+
+.form-title {
+  font-weight: 900;
+  font-size: 1.4rem;
+}
+
+.form-container {
+  display: flex;
+  flex: 1;
+  gap: 20px;
+}
+
+.left-form-side,
+.right-form-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
+input, button, label{
+  font-family: inherit;
+  font-size: 100%;
+  width: 100%;
+}
+
+label {
+  font-size: 0.9rem;
+}
