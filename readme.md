@@ -1,5 +1,7 @@
 # sign-up-form
 
+Live at: https://trustinmagic.github.io/sign-up-form/
+
 Sign up form with basic client side validation.
 
 What I learned
