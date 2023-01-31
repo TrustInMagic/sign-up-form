@@ -18,7 +18,8 @@
 body {
   display: flex;
   height: 100vh;
-  font-family:'Courier New', Courier, monospace
+  font-family:'Courier New', Courier, monospace;
+  background-color: aquamarine;
 }
 
 .left-side {
@@ -26,7 +27,7 @@ body {
   height: 100%;
   background-image: url("./images/mars.jpg");
   background-size: cover;
-  position: relative
+  overflow: hidden;
 }
 
 .form-side {
@@ -34,6 +35,7 @@ body {
   background-color: black;
   color: var(--text-color);
   font-size: 1.2rem;
+  overflow: auto;
 }
 
 .transparent {
@@ -153,6 +155,7 @@ button:active {
 }
 
 input {
+  appearance: none;
   background-color: black;
   border: 0.2px rgba(253, 244, 245, 0.3) solid;
   color: white;
@@ -160,11 +163,34 @@ input {
   border-radius: 5px;
 }
 
-input:hover {
-  border: var(--brand-color) solid;
+*:hover {
+  outline: none;
+}
+ 
+input:active,
+input:focus {
+  border: var(--brand-color) solid 1.5px;
+  outline: none;
+  box-shadow: 1px 1px 3px orange;
 }
 
-input:active {
-  outline: none;
-  border: var(--brand-color) solid;
+label > p {
+  color: red;
+  display: inline-block;
+}
+
+.error {
+  border: red 2px solid !important;
+  box-shadow: 1px 1px 3px red;
+}
+
+.input-container {
+  position: relative;
+}
+
+.error-message {
+  position: absolute;
+  font-size: 0.8rem;
+  color: red;
+  top: 50px;
 }

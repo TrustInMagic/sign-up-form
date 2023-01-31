@@ -26,29 +26,33 @@
       You <em>know</em> you want to.
     </div>
 
-    <form action="" method="get" id="form">
+    <form action="/" method="GET" id="form">
        <div class="form-title">Let's do this!</div>
        <div class="form-container">
          <div class="left-form-side">
-           <label for="fname">FIRST NAME
-             <input type="text" name="fname" id="fname">
+           <label for="fname">FIRST NAME<p>*</p>
+             <input type="text" name="fname" id="fname" required minlength="2">
            </label>
            <label for="email">EMAIL
-             <input type="email" name="email" id="email">
+             <input type="email" name="email" id="email" placeholder="example@domain.com">
            </label>
-           <label for="pwd">PASSWORD
-             <input type="password" name="pwd" id="pwd">
-           </label>
+           <div class="input-container">
+             <label for="pwd">PASSWORD<p>*</p>
+               <input type="password" name="pwd" id="pwd" required minlength="5"
+                      placeholder="Must have at least 5 characters">
+             </label>
+             <p class="error-message"></p>
+           </div>
          </div>
          <div class="right-form-side">
-           <label for="lname">LAST NAME
-             <input type="text" name="lname" id="lname">
+           <label for="lname">LAST NAME<p>*</p>
+             <input type="text" name="lname" id="lname" required minlength="2">
            </label>
-           <label for="phone">PHONE NUMBER
-             <input type="tel" name="phone" id="phone">
+           <label for="phone">PHONE NUMBER<p>*</p>
+             <input type="tel" name="phone" id="phone" required>
            </label>
-           <label for="pwd-confirm">CONFIRM PASSWORD
-             <input type="password" name="pwd-confirm" id="pwd-confirm">
+           <label for="pwd-confirm">CONFIRM PASSWORD<p>*</p>
+             <input type="password" name="pwd-confirm" id="pwd-confirm" required>
            </label>
          </div>
        </div>
