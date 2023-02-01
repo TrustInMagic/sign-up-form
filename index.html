@@ -26,36 +26,29 @@
     <div class="action-call">
       You <em>know</em> you want to.
     </div>
-
     <form action="/" method="GET" id="form">
       <div class="form-title">Let's do this!</div>
       <div class="form-container">
-        <div class="left-form-side">
-          <label for="fname">FIRST NAME<p>*</p>
-            <input type="text" name="fname" id="fname" required minlength="2">
-          </label>
-          <label for="email">EMAIL
-            <input type="email" name="email" id="email" placeholder="example@domain.com">
-          </label>
-          <div class="input-container">
-            <label for="pwd">PASSWORD<p>*</p>
-              <input type="password" name="pwd" id="pwd" required minlength="5"
-                     placeholder="Must have at least 5 characters">
-            </label>
-            <p class="error-message"></p>
-          </div>
-        </div>
-        <div class="right-form-side">
-          <label for="lname">LAST NAME<p>*</p>
-            <input type="text" name="lname" id="lname" required minlength="2">
-          </label>
-          <label for="phone">PHONE NUMBER<p>*</p>
-           <input type="tel" name="phone" id="phone" required>
-          </label>
-          <label for="pwd-confirm">CONFIRM PASSWORD<p>*</p>
-            <input type="password" name="pwd-confirm" id="pwd-confirm" required>
-          </label>
-        </div>
+        <label for="fname">FIRST NAME<p>*</p>
+          <input type="text" name="fname" id="fname" required minlength="2">
+        </label>
+        <label for="lname">LAST NAME<p>*</p>
+          <input type="text" name="lname" id="lname" required minlength="2">
+        </label>
+        <label for="email">EMAIL
+          <input type="email" name="email" id="email" placeholder="example@domain.com">
+        </label>
+        <label for="phone">PHONE NUMBER<p>*</p>
+          <input type="tel" name="phone" id="phone" required>
+         </label>
+        <label for="pwd">PASSWORD<p>*</p>
+          <input type="password" name="pwd" id="pwd" required minlength="5"
+                 placeholder="Must have at least 5 characters">
+        </label>
+        <p class="error-message"></p>
+        <label for="pwd-confirm">CONFIRM PASSWORD<p>*</p>
+          <input type="password" name="pwd-confirm" id="pwd-confirm" required>
+        </label>
        </div>
     </form>
     <button type="submit" form="form">Create Account</button>
